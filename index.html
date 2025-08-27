@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitnova Studio - Desarrollamos y diseñamos páginas web modernas, profesionales y a medida.">
+    <meta name="keywords" content="desarrollo web, diseño web, páginas web, mantenimiento web">
+    <title>Bitnova Studio - Desarrollo Web Profesional</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/faviconbs.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/faviconbs.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/faviconbs.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS CRÍTICO - Optimizado para carga inicial */
+        :root {
+            --primary-blue: #2563EB;
+            --primary-green: #10B981;
+            --accent-orange: #FF6B35;
+            --white: #FFFFFF;
+            --gray-50: #F9FAFB;
+            --gray-100: #F3F4F6;
+            --gray-200: #E5E7EB;
+            --gray-700: #374151;
+            --gray-900: #111827;
+            --black: #000000;
+            --light-blue: #E8F8FC;
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--gray-700);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, 
+                rgba(255, 255, 255, 1) 0%, 
+                rgba(232, 248, 252, 0.3) 15%,
+                rgba(232, 248, 252, 0.2) 50%,
+                rgba(232, 248, 252, 0.3) 85%,
+                rgba(255, 255, 255, 1) 100%);
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 1001;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero {
+            padding: calc(70px + 4rem) 0 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="#" class="logo" aria-label="Bitnova Studio - Inicio">Bitnova Studio</a>
+            <nav class="nav" role="navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="inicio" class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Desarrollamos tu Presencia Digital</h1>
+                    <p class="subtitle">No solo diseñamos páginas web<br>Creamos soluciones digitales que hacen crecer tu negocio.</p>
+                    <a href="https://wa.me/5493434053185" class="btn btn-primary">
+                        👉 Impulsa tu negocio hoy
+                    </a>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="carousel-item">
+                                <img src="assets/Concepto HTML01.jpg" alt="Diseño web moderno" loading="lazy">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/editando paginas01.jpg" alt="Desarrollo web profesional" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="section-title">Nuestros Servicios</h2>
+                <p class="section-description">Ofrecemos soluciones web completas para tu negocio</p>
+                
+                <div class="services-grid">
+                    <article class="service-card fade-in">
+                        <div class="service-image">
+                            <img src="assets/programacionweb.gif" alt="Animación de desarrollo web" loading="lazy">
+                        </div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Creación de sitios web responsivos, optimizados y con las últimas tecnologías del mercado.</p>
+                    </article>
+                    
+                    <article class="service-card fade-in">
+                        <div class="service-image">
+                            <img src="assets/diseñoweb.gif" alt="Animación de diseño web" loading="lazy">
+                        </div>
+                        <h3>Diseño Web</h3>
+                        <p>Diseños modernos, intuitivos y atractivos que mejoran la experiencia de usuario.</p>
+                    </article>
+                    
+                    <article class="service-card fade-in">
+                        <div class="service-image">
+                            <img src="assets/mantenimiento.gif" alt="Animación de mantenimiento web" loading="lazy">
+                        </div>
+                        <h3>Mantenimiento</h3>
+                        <p>Servicios de actualización, seguridad y optimización para mantener tu web en perfecto estado.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso" class="process" aria-labelledby="process-heading">
+            <div class="container">
+                <h2 id="process-heading" class="section-title">Proceso de Trabajo</h2>
+                <p class="section-description">Cada etapa está pensada para entender tus necesidades y entregar una solución a tu medida.</p>
+                
+                <div class="process-grid">
+                    <article class="process-card fade-in">
+                        <div class="card-header">
+                            <div class="card-icon blue"><i class="fas fa-lightbulb fa-lg"></i></div>
+                            <h3 class="card-title">Conectamos con tu visión</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="process-divider"></div>
+                            <p class="card-description">Descubrimos lo que hace único a tu negocio, entendemos tus objetivos y analizamos tu mercado para diseñar una estrategia digital sólida.</p>
+                        </div>
+                    </article>
+
+                    <article class="process-card fade-in">
+                        <div class="card-header">
+                            <div class="card-icon green"><i class="fas fa-chart-line fa-lg"></i></div>
+                            <h3 class="card-title">Planificamos la estrategia</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="process-divider"></div>
+                            <p class="card-description">Creamos un plan digital personalizado que combina diseño, usabilidad y comunicación, enfocado en atraer clientes y generar confianza.</p>
+                        </div>
+                    </article>
+
+                    <article class="process-card fade-in">
+                        <div class="card-header">
+                            <div class="card-icon blue"><i class="fas fa-laptop-code fa-lg"></i></div>
+                            <h3 class="card-title">Diseño y desarrollo</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="process-divider"></div>
+                            <p class="card-description">Diseñamos un sitio moderno y funcional, optimizado para velocidad, seguridad y experiencia de usuario, usando buenas prácticas de desarrollo.</p>
+                        </div>
+                    </article>
+
+                    <article class="process-card fade-in">
+                        <div class="card-header">
+                            <div class="card-icon green"><i class="fas fa-hands-helping fa-lg"></i></div>
+                            <h3 class="card-title">Entrega + soporte</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="process-divider"></div>
+                            <p class="card-description">Publicamos tu web y te acompañamos con mantenimiento, actualizaciones y mejoras para que tu presencia digital siga creciendo.</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <p class="process-hint">Pasa el cursor sobre cada tarjeta para conocer más detalles</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact" aria-labelledby="contact-heading">
+    <div class="container">
+        <h2 id="contact-heading">¿Listo para dar el siguiente paso?</h2>
+        <p class="section-description">Tu negocio merece estar online de manera profesional.</p>
+        
+        <form class="contact-form" aria-labelledby="contact-heading" id="contactForm" action="https://formspree.io/f/xgvleqor" method="POST">
+            <div class="form-group">
+                <label for="name">Nombre *</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Mensaje *</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            </div>
+            
+            <div class="form-submit-container">
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </div>
+        </form>
+        
+        <div class="whatsapp-contact">
+            <p>O contáctanos directamente por WhatsApp</p>
+            <a href="https://wa.me/5493434053185" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>Habla con nosotros por WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#" class="logo">Bitnova Studio</a>
+                    <p>Desarrollamos tu presencia digital con soluciones web modernas y profesionales.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proceso">Proceso</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p>
+                        <a href="mailto:bitnovastudio@gmail.com">
+                            bitnovastudio@gmail.com
+                        </a>
+                    </p>
+                    <p class="social-link">
+                        <a href="https://www.instagram.com/bitnovastudio/" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
+                            <i class="fab fa-instagram"></i> Síguenos en Instagram
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Bitnova Studio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="modal-overlay" id="successModal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="modal-title" id="modalTitle">¡Mensaje Enviado con Éxito!</h3>
+                <p class="modal-message">Hemos recibido tu mensaje correctamente. Nos pondremos en contacto contigo a la brevedad.</p>
+                <button class="modal-close" id="closeModal">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
