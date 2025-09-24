@@ -1,0 +1,61 @@
+@import '../base/variables.css';
+.header {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-md);
+}
+
+.nav a {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    color: var(--gray-700);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: var(--gray-50);
+    color: var(--primary-blue);
+}
+
+@media (max-width: 768px) {
+    .header .container { 
+        flex-direction: column; 
+        gap: var(--spacing-sm); 
+    }
+    
+    .nav ul { 
+        gap: var(--spacing-sm); 
+    }
+}
